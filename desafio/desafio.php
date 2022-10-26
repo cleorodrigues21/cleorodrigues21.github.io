@@ -3,12 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<title>Desafios</title>
-	<link rel="stylesheet" type="text/css" href="../fontawesome/css/all.css"/>
-	<link rel="stylesheet" type="text/css" href="../footer/footer.css"/>
-    <link rel="stylesheet" type="text/css" href="../header/header.css"/>
+	<link rel="stylesheet" type="text/css" href="/Pagina-Pessoal/fontawesome/css/all.css"/>
+	<link rel="stylesheet" type="text/css" href="/Pagina-Pessoal/footer/footer.css"/>
+    <link rel="stylesheet" type="text/css" href="/Pagina-Pessoal/header/header.css"/>
 </head>
 
-<body> <?php require_once "../header/header.php" ?>
+<body> <?php require_once "Pagina-Pessoal/header/header.php" ?>
 	<div style="text-align: center;margin-left: auto;margin-right: auto;width: 95%;height: 500px;background-color: #D3D3D3;" >
 		<h1>Desafios - HTML/JAVASCRIPT</h1> 
 			<p>Olá nesta pagina mostra algumas atividades desenvolvidas por mim durante o Curso Técnico...</p>
@@ -103,5 +103,5 @@
 		</fieldset>
 	</div><br>
 </body>
-	<?php require_once "../footer/footer.php" ?>
+	<?php require_once "Pagina-Pessoal/footer/footer.php" ?>
 </html>	

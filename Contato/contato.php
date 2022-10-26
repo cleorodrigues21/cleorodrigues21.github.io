@@ -52,7 +52,7 @@
           </form>
   </div>    <br>
 </body>
-<footer style="width: auto;height: 95px;background: #363636;bottom: fixed;font-size: 17px;color:#0080FF;">
+<footer style="width: 100%;height: 95px;background: #363636;bottom: fixed;font-size: 17px;color:#0080FF;">
     <i class="fa-solid fa-graduation-cap"></i> Cléo R. Rodrigues - Técnico em Informática
         <p class="c">
         <a href="https://www.instagram.com/cleorodrigues21/"><i class="fa-brands fa-instagram"></i></a>

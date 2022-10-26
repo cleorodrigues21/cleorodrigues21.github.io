@@ -3,9 +3,9 @@
   <head>
     <title>Título da página</title>
     <meta charset="UTF8" />
-    <link rel="stylesheet" type="text/css" href="Pagina-Pessoal/fontawesome/css/all.css"/>
-    <link rel="stylesheet" type="text/css" href="Pagina-Pessoal/footer/footer.css"/>
-    <link rel="stylesheet" type="text/css" href="Pagina-Pessoal/header/header.css"/>
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css"/>
+    <link rel="stylesheet" type="text/css" href="footer/footer.css"/>
+    <link rel="stylesheet" type="text/css" href="header/header.css"/>
   </head>
   
   <body><?php require_once "Pagina-Pessoal/header/header.php" ?>

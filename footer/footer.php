@@ -9,6 +9,7 @@
       </p>
       <p class="c">
         Ivoti - Rio Grande do Sul -
+       <script src="data.js"></script>
        <script src="../data.js"></script>
       </p>
 </footer>
