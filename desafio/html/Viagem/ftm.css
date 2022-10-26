@@ -1,0 +1,28 @@
+input{
+    border-radius: 40px;
+}
+button{
+    background-color: blue;
+    background-attachment: 5px;
+    border-radius: 50px;
+    border: none;
+}
+div{
+background-color: antiquewhite;
+margin-left: auto;
+margin-right: auto;
+width: 400px;
+height: 400px;
+text-align: center;
+}
+.tm{
+    width: 40px;
+    height: auto;
+}
+textarea{
+    height: 90px;
+    width: 380px;
+    border-radius: 5px;
+    border: none;
+    resize: none;
+}

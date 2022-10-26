@@ -1,0 +1,31 @@
+p2{
+	color: red;
+	font-size: 20px;
+	font-family: italic;
+	}
+p1{
+	color: blue;
+	font-size:20px;
+	font-family: italic;
+}
+body{
+    background: url(images.jpg) no-repeat;
+    background-size: 100%;
+    background-color: aliceblue;
+}
+div{
+    height: 300px;
+    width: 400px;
+    background-color: rgb(149, 240, 240);
+    border-radius: 5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+button{
+    background-color: rgb(49, 120, 226);
+    border-color: rgb(49, 120, 226);
+    color:white;
+    border-radius: 5px;
+    text-transform:uppercase;
+    font-weight: bold;}

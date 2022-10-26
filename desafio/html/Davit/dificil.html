@@ -1,0 +1,802 @@
+﻿<!DOCTYPE HTML>
+<html lang="pt-br">
+
+  <head>
+        
+        <meta charset="UTF-8"> 
+       <title>trabalho_davit</title>
+        
+		<script type="text/javascript" src="http://inf.fw.iffarroupilha.edu.br/~bruno/disciplinas/programacao1/materiais/Davit/Davit/mainDavit.js"></script>
+		<script type="text/javascript" src="http://inf.fw.iffarroupilha.edu.br/~bruno/disciplinas/programacao1/materiais/Davit/Davit/base.js"></script>
+		<script type="text/javascript" src="http://inf.fw.iffarroupilha.edu.br/~bruno/disciplinas/programacao1/materiais/Davit/CodeMirror/js/codemirror.js"></script>
+		<script type="text/javascript" src="http://inf.fw.iffarroupilha.edu.br/~bruno/disciplinas/programacao1/materiais/Davit/CodeMirror/js/mirrorframe.js"></script>
+
+		<script type="text/javascript">
+
+            var sExemploCodigo="/* Coloque seu código aqui */ \n";
+
+			function configurarExercicio()
+			{
+			   main();
+			   
+			// Cria um mundo com 20 linhas e 20 colunas mostrando as linhas 
+			makeworld(20,20,true);     
+			   
+			// Cria um muro no Oeste da posição (2,1)
+			createLongWall([2,0], 'O', 19); // x =2 e y =1
+			   	
+			// Cria um muro ao norte da posição (2,18)
+			createLongWall([2,18], 'N', 17); // x =2 e y =18 
+			   
+			//Cria um muro de tamanho 17 iniciando ao sul da posição (2,1).
+			createLongWall([2,1], 'S', 17); // x =2 e y =1 
+ 
+ 			//cria um muro de tamanho 12 inicinado ao leste da posicao (19,1)
+ 			   createLongWall([19,1],'O', 12);//x =19  y = 1
+
+ 			//cria um muro de tamanho 4 inicinado ao leste da posicao (18,14)
+ 			   createLongWall([18,14],'O', 4);//x =18  y = 14
+
+			//cria um muro de tamanho  iniciando ao N da posicao (,)
+			createLongWall([10,12],'N', 9);//x =  y = 
+
+			//cria um muro de tamanho  iniciando ao N da posicao (5,13)
+			createLongWall([5,13],'N', 13);//x = 5 y = 13
+
+			//cria um muro de tamanho  iniciando ao N da posicao (5,17)
+			createLongWall([6,17],'N', 12);//x = 5 y = 17
+
+			// Cria um muro no Oeste da posição (2,1)
+			createLongWall([5,1], 'O', 17); // x =2 e y =1
+
+			//cria u muro de tamanho  iniciando ao oeste da posicao (,).
+			createLongWall([11,1], 'O', 11); //x =  y = 
+
+			//cria u muro de tamanho iniciando ao sul da posicao (5,4).
+			createLongWall([5,4], 'S', 5); //x = 5 y = 4
+
+			//cria u muro de tamanho iniciando ao sul da posicao (5,4).
+			createLongWall([11,8], 'S', 7); //x = 5 y = 4
+
+			//cria u muro de tamanho iniciando ao sul da posicao (6,7).
+			createLongWall([6,7], 'S', 5); //x = 6 y = 7
+
+			//cria u muro de tamanho  iniciando ao sul da posicao (5,12).
+			createLongWall([5,12], 'S', 5); //x = 5 y = 12
+
+			//cria u muro de tamanho  iniciando ao sul da posicao (11,4).
+			createLongWall([11,4],'S',6); //x = 11 y = 4
+
+			//cria u muro de tamanho  iniciando ao sul da posicao (2,4).
+			createLongWall([2,4],'S',2); //x = 2 y = 4
+
+			//cria u muro de tamanho  iniciando ao sul da posicao (3,6).
+			createLongWall([3,6],'S',2); //x = 3 y = 6
+
+			//cria u muro de tamanho  iniciando ao sul da posicao (2,9).
+			createLongWall([2,9],'S',2); //x = 2 y = 9
+
+			//cria u muro de tamanho  iniciando ao sul da posicao (3,15).
+			createLongWall([3,15],'S',2); //x = 3 y = 15
+
+		//Cria um disco	VERDE na posição coluna 2 e linha 3
+		createDisc([2,3],"rgb(0,245,0)");
+
+		//Cria um disco branco na posição coluna 1 e linha 0
+		createDisc([1,0],"rgb(256,256,256)");
+
+		//Cria um disco Roxo na posição coluna 3 e linha 6
+		createDisc([3,6],"rgb(80,50,220)");
+
+		//Cria um disco Roxo na posição coluna 5 e linha 8
+		createDisc([5,8],"rgb(80,50,220)");
+
+		//Cria um disco marron# na posição coluna 11 e linha 3
+		createDisc([11,3],"rgb(80,50,20)");
+
+		//Cria um disco marron# na posição coluna 2 e linha 4
+		createDisc([2,4],"rgb(80,50,20)");
+			   
+		//Cria um disco VERDE na posição coluna 17 e linha 14
+		createDisc([17,14],"rgb(0,245,0)");
+			   
+		//Cria um disco VERDE na posição coluna 5 e linha 3
+		createDisc([5,3],"rgb(0,245,0)");
+
+		//Cria um disco AZUL na posição coluna 11 e linha 8
+		createDisc([11,8],"rgb(0,170,256)");
+
+		//Cria um disco AZUL na posição coluna 5 e linha 12
+		createDisc([5,12],"rgb(0,170,256)");
+
+		//Cria um disco AZUL na posição coluna 16 e linha 4
+		createDisc([16,4],"rgb(0,170,256)");
+			   
+		//Cria o DAVIT na coluna 3 e linha 0 indo para o Sul
+		createDavit(3,0,'O');
+			}
+		
+		</script>
+		
+		
+  </head>
+  <body>
+
+  <h1>Trabalho de Programação 1</h1>
+  <h2>Autor: Cléo da Rocha Rodrigues</h2>
+  <h3>Curso Técnico em Informática - Instituto Federal Farroupilha - Câmpus de Frederico Westphalen</h3>
+  <hr>
+  
+  <p><b>Desafio:</b> Faça com que o Davit leve os 2 discos marron, os 3 Verdes,os 3 azuls e os 2 roxos até o disco branco, nessa ordem.</p>
+
+  <canvas id="showCanvas" width="350" height="350" style="background: #000000;"> </canvas>  
+
+  <h3>Programe o Robô Davit!</h3>
+
+  <textarea id="programaDavit" width="230" height="290" style="border:1px solid #888;"> </textarea>
+
+  <input type="button" value="Restaurar" onclick="configurarExercicio();"/> 
+  <input type="button" value="Executar" onclick="exec(editor.getCode());"/>
+
+
+  <script type="text/javascript">
+      
+      configurarExercicio();
+      var textarea = document.getElementById('programaDavit');
+      var url_base = "http://inf.fw.iffarroupilha.edu.br/~bruno/disciplinas/programacao1/materiais/Davit/"
+      var editor = CodeMirror.fromTextArea(textarea, {parserfile: ["tokenizejavascript.js", "parsejavascript.js"], path: url_base + "CodeMirror/js/", stylesheet: url_base + "CodeMirror/css/jscolors.css", content: sExemploCodigo});
+  </script>
+  
+  <p>Para ver a resposta, clique <b>aqui</b> e arraste o mouse ... (continue arrastando para baixo) ....</p>
+  
+  <pre style="color: #FFFFFF;">
+turn();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+turn();
+turn();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+getDisc();
+turn();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+turn();
+move();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+move();
+move();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+move();
+turn();
+move();
+move();
+move();
+turn();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+move();
+getDisc();
+turn();
+turn();
+turn();
+move();
+move();
+turn();
+move();
+turn();
+move();
+move();
+getDisc();
+turn();
+turn();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+move();
+turn();
+move();
+turn();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+move();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+move();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+turn();
+move();
+move();
+move();
+turn();
+move();
+move();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+getDisc();
+turn();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+turn();
+move();
+move();
+move();
+move();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+turn();
+move();
+move();
+move();
+move();
+move();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+turn();
+turn();
+turn();
+move();
+turn();
+move();
+move();
+move();
+move();
+move();
+turn();
+move();
+move();
+move();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+move();
+move();
+turn();
+turn();
+turn();
+move(); 
+move();
+move();
+move();
+move();
+turn();
+move();
+turn();
+move();
+move();
+move();
+move();
+move();
+getDisc();
+turn();
+turn();
+move();
+move();
+move();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+move();
+move();
+move();
+move();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+turn();
+move();
+move();
+move();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+turn();
+move();
+move();
+getDisc();
+turn();
+move();
+move();
+move();
+turn();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+turn();
+turn();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+getDisc();
+turn();
+move();
+move();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+getDisc();
+turn();
+turn();
+move();
+move();
+move();
+move();
+move();
+turn();
+move();
+move();
+move();
+move();
+turn();
+move();
+move();
+move();
+move();
+move();
+getDisc();
+turn();
+move();
+move();
+move();
+turn();
+move();
+move();
+move();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+turn();
+turn();
+turn();
+move();
+turn();
+move();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+move();
+move();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+move();
+turn();
+move();
+move();
+move();
+turn();
+move();
+getDisc();
+turn();
+move();
+move();
+turn();
+move();
+turn();
+turn();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+move();
+turn();
+move();
+move();
+move();
+move();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+turn();
+turn();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+putDisc();
+		alert("Concluído!!");  
+  </pre>
+  
+  <p>até <b>aqui</b></p>
+
+</body>
+
+</html>

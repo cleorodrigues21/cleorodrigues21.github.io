@@ -1,0 +1,309 @@
+
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+  <head>
+        
+        <meta charset="UTF-8"> 
+       <title>trabalho_davit</title>
+        
+		<script type="text/javascript" src="http://inf.fw.iffarroupilha.edu.br/~bruno/disciplinas/programacao1/materiais/Davit/Davit/mainDavit.js"></script>
+		<script type="text/javascript" src="http://inf.fw.iffarroupilha.edu.br/~bruno/disciplinas/programacao1/materiais/Davit/Davit/base.js"></script>
+		<script type="text/javascript" src="http://inf.fw.iffarroupilha.edu.br/~bruno/disciplinas/programacao1/materiais/Davit/CodeMirror/js/codemirror.js"></script>
+		<script type="text/javascript" src="http://inf.fw.iffarroupilha.edu.br/~bruno/disciplinas/programacao1/materiais/Davit/CodeMirror/js/mirrorframe.js"></script>
+
+		<script type="text/javascript">
+
+            var sExemploCodigo="/* Coloque seu código aqui */ \n";
+
+			function configurarExercicio()
+			{
+			   main();
+			   
+			   // Cria um mundo com 15 linhas e 12 colunas mostrando as linhas 
+			   makeworld(15,12,true);     
+			   			   
+			   // Cria um muro no Oeste da posição (1,1)
+			   createLongWall([1,1], 'O', 10); // x = 1 e y = 1
+			   
+			   // Cria um muro ao leste da posição (12,1)
+			   createLongWall([12,1], 'L', 10); // x = 12 e y = 1
+			   
+               //Cria um muro de tamanho 12 iniciando ao norte da posição (1,11).
+               createLongWall([0,11], 'S', 13); // x = 1 e y = 11
+ 
+ 				//cria um muro de tamanho 9 inicinado ao oeste da posicao (2,1)
+ 			   createLongWall([2,1],'O', 9 );//x = 2 y = 1
+
+ 			   //cria um muro de tamanho 10 iniciando ao sul da posicao (8,2)
+ 			   createLongWall([2,8],'S', 10 );//x = 2 y = 8
+
+	   			//cria u muro de tamanho 6 iniciando ao oeste da posicao (3,2).
+ 				createLongWall([3,2], 'O', 6); //x = 3 y = 2
+
+ 				//cria u muro de tamanho 11 iniciando ao sul da posicao (2,1).
+ 				createLongWall([2,1], 'S', 11); //x = 1 y = 1
+
+
+ 				//cria u muro de tamanho 5	iniciando ao sul da posicao (3,6).
+ 				createLongWall([3,6], 'S', 5); //x = 3 y = 6
+
+ 				//cria u muro de tamanho 5 iniciando ao sul da posicao (3,4).
+ 				createLongWall([3,4], 'S',	5); //x = 3 y = 4
+
+ 				//cria u muro de tamanho 6 iniciando ao sul da posicao (9,2).
+ 				createLongWall([9,2],'O',6); //x = 3  y = 8
+
+
+               //Cria um disco	verde forte	na posição coluna 3 e linha 4
+			   createDisc([3,4],"rgb(80,150,0)");
+
+               //Cria um disco branco na posição coluna 1 e linha 10
+			   createDisc([1,10],"rgb(256,256,256)");
+
+               //Cria um disco roxo na posição coluna 3 e linha 7
+			   createDisc([3,7],"rgb(80,50,220)");
+
+               //Cria um disco marron na posição coluna 2 e linha 4
+			   createDisc([2,4],"rgb(80,50,20)");
+			   
+			   //Cria um disco VERDE na posição coluna 0 e linha 5
+			   createDisc([2,6],"rgb(0,255,0)");
+			   
+			   //Cria um disco CINZA na posição coluna 2 e linha 1
+			   createDisc([2,2],"rgb(100,100,100)");
+			   
+			   //Cria o DAVIT na coluna 8 e linha 3 indo para o Sul
+			   createDavit(8,11,'N');
+			}
+		
+		</script>
+		
+		
+  </head>
+  <body>
+
+  <h1>Trabalho de Programação 1</h1>
+  <h2>Autor: Cléo da Rocha Rodrigues</h2>
+  <h3>Curso Técnico em Informática - Instituto Federal Farroupilha - Câmpus de Frederico Westphalen</h3>
+  <hr>
+  
+  <p><b>Desafio:</b> Faça com que o Davit leve o disco marron, Verde, verde forte, cinza e roxo	até o disco branco.</p>
+
+  <canvas id="showCanvas" width="350" height="350" style="background: #000000;"> </canvas>  
+
+  <h3>Programe o Robô Davit!</h3>
+
+  <textarea id="programaDavit" width="230" height="290" style="border:1px solid #888;"> </textarea>
+
+  <input type="button" value="Restaurar" onclick="configurarExercicio();"/> 
+  <input type="button" value="Executar" onclick="exec(editor.getCode());"/>
+
+
+  <script type="text/javascript">
+      
+      configurarExercicio();
+      var textarea = document.getElementById('programaDavit');
+      var url_base = "http://inf.fw.iffarroupilha.edu.br/~bruno/disciplinas/programacao1/materiais/Davit/"
+      var editor = CodeMirror.fromTextArea(textarea, {parserfile: ["tokenizejavascript.js", "parsejavascript.js"], path: url_base + "CodeMirror/js/", stylesheet: url_base + "CodeMirror/css/jscolors.css", content: sExemploCodigo});
+  </script>
+  
+  <p>Para ver a resposta, clique <b>aqui</b> e arraste o mouse ... (continue arrastando para baixo) ....</p>
+  
+  <pre style="color: #FFFFFF;">
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+turn();
+move();
+move();
+move();
+move();
+move();
+getDisc();
+turn();
+turn();
+move();
+move();
+getDisc();
+move();
+move();
+getDisc();
+move();
+turn();
+turn();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+move();
+move();
+move();
+move();
+getDisc();
+turn();
+move();
+turn();
+move();
+move();
+move();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+move();
+move();
+move();
+move();
+getDisc();
+turn();
+turn();
+move();
+move();
+move();
+move();
+move();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+move();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+turn();
+turn();
+turn();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+move();
+putDisc();
+
+		alert("Concluído!!");  
+  </pre>
+  
+  <p>até <b>aqui</b></p>
+
+</body>
+
+</html>

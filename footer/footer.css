@@ -1,0 +1,17 @@
+	footer{
+			width: auto;
+			height: 85px;
+			background: #363636;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			font-size: 17px;
+			color:#0080FF;
+	}
+	.c{
+			text-align: right;
+	}
+	a{
+			text-decoration: none;
+			color:#2ECCFA;
+	}

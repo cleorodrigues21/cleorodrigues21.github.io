@@ -1,0 +1,15 @@
+body{
+    background-color: antiquewhite; 
+    background-size: 100%;
+}
+div{
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+        background-color: blanchedalmond;
+        text-align: center;
+}
+input{
+    border-radius: 4px;
+}

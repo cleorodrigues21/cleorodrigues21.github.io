@@ -1,0 +1,39 @@
+h2{
+    color: darkgreen;
+}
+legend{
+    font-size: 15px;
+    color: darkolivegreen;
+}
+input{
+    border-color: rgb(3, 18, 63);
+    border-radius: 4px;
+}
+fieldset{
+    border-radius: 5px;
+    border-color: darkslategray;
+}
+body{
+    background-color: aliceblue;
+}
+i{
+    text-transform:uppercase;
+    font-weight: bold;
+    color: rgb(28, 100, 28);
+}
+button{
+    background-color: rgb(119, 149, 67);
+    border-color: rgb(119, 149, 67);
+    color: white;
+    border-radius: 5px;
+    text-transform:uppercase;
+    font-weight: bold;
+}
+.botao{
+    background-color: rgb(119, 149, 67);
+    border-color: rgb(119, 149, 67);
+    color: white;
+    border-radius: 5px;
+    text-transform:uppercase;
+    font-weight: bold;
+}

@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Super Mercado</title>
+    <link rel="stylesheet" type="text/css" href="fmtc.css" />
+  </head>
+  <body>
+    <div>
+      <p>
+        Preço:
+        <input id="preco" type="number" />
+      </p>
+      <p>
+        Quantidade:
+        <input id="quantidade" type="number" />
+      </p>
+      <button onclick="preco()">Sub-Total</button>
+    </div>
+    <div>
+      <p>
+        Sub-total
+        <input id="subtotal" readonly="true" />
+      </p>
+      <p>
+        Desconto %
+        <input id="desconto" type="number" />
+      </p>
+      <button onclick="desconto()">Calcular</button>
+      <input id="dsc" readonly="true" />
+    </div>
+    <div>
+      <p>
+        Total
+        <input id="total" readonly="true" />
+      </p>
+      <p>
+        Dinheiro
+        <input id="dinheiro" type="number" />
+      </p>
+      <p>
+        <button onclick="troco()">Troco</button>
+        <input id="troco" />
+      </p>
+    </div>
+  </body>
+  <script src="caixa.js"></script>
+</html>
