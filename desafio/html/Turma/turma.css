@@ -1,0 +1,15 @@
+img{
+width: 200px;
+height: 200px;
+-webkit-transition:  all .01s cubic-bezier(.190, 1.000, .220, 1.000);
+-moz-transition: all .01s cubic-bezier(.190, 1.000, .220, 1.000);
+-ms-transition: all .01s cubic-bezier(.190, 1.000, .220, 1.000);
+-o-transition: all .01s cubic-bezier(.190, 1.000, .220, 1.000);
+transition: all .01s cubic-bezier(.190, 1.000, .220, 1.000);
+}
+p{
+    font-family:arial; 
+	font-size:15px ;
+	color: #062120;
+	font-weight: bold;
+}

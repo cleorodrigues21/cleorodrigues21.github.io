@@ -1,0 +1,13 @@
+CREATE DATABASE Livraria;
+USE Livraria;
+
+CREATE TABLE Livro (
+ Id_Livro int NOT NULL,
+ titulo varchar(255) NOT NULL,
+ autor varchar(255) NOT NULL,
+ editora varchar(255) NOT NULL,
+ edição INT NOT NULL,
+ ano INT NOT NULL,
+ valor DOUBLE NOT NULL,
+ estoque BOOLEAN NOT NULL
+);

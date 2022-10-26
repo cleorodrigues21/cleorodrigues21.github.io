@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8"/> 
+		<link rel="stylesheet" type="text/css" href="formatacao.css"/>
+	</head>
+	<body>
+		
+		<h2>Simulador do indice de carencia</h2>
+			<p>Simulador para verificar se podera participar do edital:</p>
+
+		<fieldset>
+			<legend>Dados Familiares e Financeiros</legend>
+			<div>
+				<i>Nome:</i> <input type="text" id="nome">
+				<i>Sexo:</i> <input type="radio" id="fem" name="sexo">feminino
+					<input type="radio"  id="mas" name="sexo">masculino
+				<br><br><i>Renda bruta:</i> <input type="number" id="renda">
+				<i>N° de integrantes da familia:</i> <input type="number" id="pessoas">
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Informação Socio-Econômica</legend>
+			<input type="checkbox" id ="moradia"> a familia mora de aluguel?<br>
+			<input type="checkbox" id ="provedor">familia tem um unico provedor (responsavel) e tem filhos menores de idade?<br>
+			<input type="checkbox" id ="beneficio"> a familia recebe benêficio social (ex. bolsa familia, BPC, seguro desemprego)<br>
+			<input type="checkbox" id ="deficiencia">há na familia algum integrante com necessidades especiais?<br>
+			<input type="checkbox" id ="doenca">a familia a algum portador de doenca cronica?<br>
+			<input type="checkbox" id ="cota">o estudante ingressou no IFFAR por meio de cotas?<br>
+		</fieldset>
+			<br>
+		<center>
+			<button onclick="verificar()">verificar indice</button>
+		</center>
+	</body>
+	<script src="auxilio.js"></script>
+</html>
+

@@ -1,0 +1,13 @@
+CREATE DATABASE rodoviaria;
+USE rodoviaria;
+
+CREATE TABLE Passageiro (
+ Id_Passageiro int(10) NOT NULL,
+ Nome varchar(255) NOT NULL,
+ Genero tinyint(1) NOT NULL,
+ Rg varchar(15) NOT NULL,
+ Cpf varchar(15) NOT NULL,
+ Endereco varchar(100) NOT NULL,
+ Email varchar(255) NOT NULL,
+ Telefone varchar(15) NOT NULL
+);

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>relatório de viagem</title>
+    <link rel="stylesheet" type="text/css" href="ftm.css" />
+  </head>
+  <body>
+    <div>
+      <h2>relatório de viagem</h2>
+
+      <p>data da viagem:<input type="date" id="data" /></p>
+
+      <p>
+        Km Inicial: <input type="number" id="saida" class="tm" /> Km
+        Final:<input type="number" id="chegada" class="tm" />
+        <button onClick="calcular()">ok</button>
+      </p>
+      distancia:
+      <input type="number" id="distancia" readonly="0" />
+
+      <p>
+        combustivel(em litros):
+        <input type="number" id="combustivel" />
+        <button onClick="consumo()">ok</button>
+      </p>
+      <p>
+        media de consumo por litro:
+        <input type="number" id="media" readonly="0" />
+      </p>
+
+      <h4>relatório</h4>
+      <textarea disabled id="relatorio"></textarea>
+    </div>
+  </body>
+  <script src="viagem.js"></script>
+</html>

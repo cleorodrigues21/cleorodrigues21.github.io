@@ -1,0 +1,27 @@
+button{
+	border:5px,5px;
+	border-color: #0000FF; 
+	color:#191970;
+	font-family: serif;
+	font-size: 15px;
+	background-color:rgba(53, 83, 233, 0.327);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+fieldset{
+    width: 400px;
+    height:220px;
+    color:#0e1313;
+    background-color:#b7b7b57f;
+    border-radius: 8px;
+    /* Declaração para aparecer no Firefox */
+    -moz-border-radius: 10px;
+}
+input{
+    width: 400px;
+    height: 50px;
+    border-radius: solid;
+}
+table{
+    text-align: center;
+}

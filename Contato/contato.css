@@ -1,0 +1,12 @@
+	.num{
+			font-size: 20px;
+			color: #89715b;
+	}
+	b{
+			font-size: 60px;
+			font-weight: 700;
+			font-family: "Zilla Slab", serif;
+			color: #89715b;
+			display: block;
+			line-height: 1.2;
+	}
