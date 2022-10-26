@@ -5,6 +5,7 @@
         <a href="https://www.facebook.com/cleo.r.rodrigues.16"><i class="fa-brands fa-facebook"></i></a>
         <a href="https://wa.me/5596298339"><i class="fa-brands fa-whatsapp icon"></i></a> 
         <a href="https://www.linkedin.com/in/cleo-r-rodrigues-944a5822b"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/cleorodrigues21"><i class="fa-brands fa-github"></i></a>
       </p>
       <p class="c">
         <script src="data.js"></script>
