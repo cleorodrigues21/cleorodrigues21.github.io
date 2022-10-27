@@ -50,19 +50,26 @@
             
         <button type="submit" name="enviar" id="enviar" value=""  class="btn waves-effect waves-light"><i class="fa-solid fa-pencil"></i></button>
           </form>
-  </div>    <br>
+  </div>  
+  <div style="float:right; width: 500px; height: 500px; background-color: green;">
+  </div>  <br>
 </body>
-<footer style="width: 100%;height: 95px;background: #363636;bottom: fixed;font-size: 17px;color:#0080FF;">
-    <i class="fa-solid fa-graduation-cap"></i> Cléo R. Rodrigues - Técnico em Informática
-        <p class="c">
-        <a href="https://www.instagram.com/cleorodrigues21/"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.facebook.com/cleo.r.rodrigues.16"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://wa.me/5596298339"><i class="fa-brands fa-whatsapp icon"></i></a> 
-        <a href="https://www.linkedin.com/in/cleo-r-rodrigues-944a5822b"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/cleorodrigues21"><i class="fa-brands fa-github"></i></a>
-        <script src="data.js"></script>
-        <script src="../data.js"></script>
-      </p>
+<footer style="width:100%;height:50px;background:#4682B4;bottom:0;left:0;font-size:11px;font-family: italic;color:white;">
+<hr style="color: transparent;border:none;">    
+<i class="fa-solid fa-graduation-cap"></i> Cléo R. Rodrigues - Técnico em Informática
+ <div style="float: right;width: auto; color:white;">
+      <a href="https://www.instagram.com/cleorodrigues21/"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.facebook.com/cleo.r.rodrigues.16"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://wa.me/5596298339"><i class="fa-brands fa-whatsapp"></i></a> 
+      <a href="https://www.linkedin.com/in/cleo-r-rodrigues-944a5822b"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/cleorodrigues21"><i class="fa-brands fa-github"></i></a>
+ </div>
+      
+  <div style="text-align: right;font-size: 10px;width: auto;height: 10px;">
+  Ivoti - Rio Grande do Sul -    
+  <script src="data.js"></script>
+  <script src="../data.js"></script>
+  </div>
 </footer>
 </html>
 

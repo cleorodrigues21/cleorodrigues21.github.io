@@ -14,28 +14,29 @@
     #menu ul {
                 padding:10px;
                 margin:-1%;
-                background-color:#C0C0C0; 
+                background-color:#0000CD; 
                 list-style:none;
                 width: auto;
+                height: 80px;
     }
     #menu ul li {
                 display: inline; 
     }
     #menu ul li a {
                 padding: 2px 10px;
-                background-color:#C0C0C0;
-                color: black; 
+                background-color:#0000CD;
+                color: white; 
                 text-decoration: none;
-                border-bottom:3px solid #C0C0C0; 
+                border-bottom:3px solid #0000CD; 
                 float: right;
                 margin-top: 0%;
                 margin-right: 30px;
                 font-size: 20px;
     }
     #menu ul li a:hover {
-                background-color:#D6D6D6;
-                color: #08088A;  
-                border-bottom:4px solid blue;
+                background-color:#0000CD;
+                color: white;  
+                border-bottom:4px solid #0000CD;
                 height: 35px;
                 font-size: 25px;
     }   

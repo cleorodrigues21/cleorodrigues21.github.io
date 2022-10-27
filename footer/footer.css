@@ -1,19 +1,30 @@
 	footer{
 			width: 100%;
-			height: 85px;
-			background: #363636;
+			height: 50px;
+			background: #4682B4;
 			position: fixed;
 			bottom: 0;
 			left: 0;
-			font-size: 17px;
-			color:#0080FF;
+			font-size: 11px;
+			font-family: italic;
+			color:white;
+	}
+	.r{
+			text-align: right;
+			font-size: 10px;
+			width: auto;
+			height: 10px;
+			font-family: italic;
 	}
 	.c{
-			text-align: right;
-	}
+		float: right;
+		width: auto;
+		height: 15px;
+		font-family: italic;
+}
 	a{
 			text-decoration: none;
-			color:#2ECCFA;
+			color:white;
 	}
 	.foto{
 		background-image: url(./47281.png);
