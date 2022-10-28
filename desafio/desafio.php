@@ -3,12 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<title>Desafios</title>
-	<link rel="stylesheet" type="text/css" href="/Pagina-Pessoal/fontawesome/css/all.css"/>
-	<link rel="stylesheet" type="text/css" href="/Pagina-Pessoal/footer/footer.css"/>
-    <link rel="stylesheet" type="text/css" href="/Pagina-Pessoal/header/header.css"/>
+	<link rel="stylesheet" type="text/css" href="../fontawesome/css/all.css"/>
+	<link rel="stylesheet" type="text/css" href="../footer/footer.css"/>
+    <link rel="stylesheet" type="text/css" href="../header/header.css"/>
 </head>
 
-<body> <?php require_once "Pagina-Pessoal/header/header.php" ?>
+<body> <?php require_once "../Pagina-Pessoal/header/header.php" ?>
 	<div style="text-align: center;margin-left: auto;margin-right: auto;width: 95%;height: 500px;background-color: #D3D3D3;" >
 		<h1>Desafios - HTML/JAVASCRIPT</h1> 
 			<p>Olá nesta pagina mostra algumas atividades desenvolvidas por mim durante o Curso Técnico...</p>
@@ -73,7 +73,7 @@
 						<p><a href="./php/implementando.php">Implementando</a><p>
 						<p><a href="./php/meunome.php">Nome</a><p>
 						<p><a href="./php/numero.php">Número</a><p>
-						<p><a href="./php/Galeria#PHP/Galeria.php">Galeria</a><p>
+						<p><a href="./php/Galeria.php">Galeria</a><p>
 					</tb>
 				</table>
 		</fieldset>
@@ -103,5 +103,5 @@
 		</fieldset>
 	</div><br>
 </body>
-	<?php require_once "Pagina-Pessoal/footer/footer.php" ?>
+	<?php require_once "../Pagina-Pessoal/footer/footer.php" ?>
 </html>	

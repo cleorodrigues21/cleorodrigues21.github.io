@@ -10,9 +10,12 @@
 			display: block;
 			line-height: 1.2;
 	}
-	a{
-		color: white;
-	}
 	i{
 		color: white;
+	}
+	.z{
+		float: right;
+	}
+	div{
+		display: inline-block;
 	}

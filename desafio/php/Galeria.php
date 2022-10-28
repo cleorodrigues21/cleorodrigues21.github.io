@@ -11,7 +11,7 @@
   <?php
 $types = array( 'png', 'jpg', 'jpeg', 'gif' ); 
 
-if ( $handle = opendir('C:\xampp\htdocs\Galeria') ) { 
+if ( $handle = opendir('C:\PROGRAMAÇÂO\TESTE GIT\Pagina-Pessoal\desafio\php') ) { 
     while ( $entry = readdir( $handle ) ) { 
         $ext = strtolower( pathinfo( $entry, PATHINFO_EXTENSION) ); 
         if( in_array( $ext, $types ) ) 

@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <title>Sobre</title>
     <link rel="stylesheet" type="text/css" href="sobre.css"/>
-    <link rel="stylesheet" type="text/css" href="/Pagina-Pessoal/fontawesome/css/all.css"/>
-	<link rel="stylesheet" type="text/css" href="/Pagina-Pessoal/footer/footer.css"/>
-    <link rel="stylesheet" type="text/css" href="/Pagina-Pessoal/header/header.css"/>
+    <link rel="stylesheet" type="text/css" href="../fontawesome/css/all.css"/>
+	<link rel="stylesheet" type="text/css" href="../footer/footer.css"/>
+    <link rel="stylesheet" type="text/css" href="../header/header.css"/>
   </head>
-  <body>  <?php require_once "Pagina-Pessoal/header/header.php" ?>  
+  <body>  <?php require_once "../Pagina-Pessoal/header/header.php" ?>  
 
   <div id="tam">
   <div id="foto"> <img src="perfil.jpg" class="img"> </div>
@@ -48,7 +48,7 @@
                   falha sempre nos trás uma nova solução.
                  <li> Então se desafie ao maximo a viver da melhor forma ;)</li>
             </ul>
-      </div>
+      </div><br><br>
   </body>
-  <?php require_once "Pagina-Pessoal/footer/footer.php" ?>
+  <?php require_once "../Pagina-Pessoal/footer/footer.php" ?>
 </html>
