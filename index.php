@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css"/>
     <link rel="stylesheet" type="text/css" href="footer/footer.css"/>
     <link rel="stylesheet" type="text/css" href="header/header.css"/>
+
     <style>
       .div{
         display: inline-block;
@@ -20,14 +21,24 @@
         width: 130px;
         height: 130px;
         border-radius: 90px;
-        border: 2px solid white;
+        border: 2px solid Black;
       }
       .divfoto{
         background: url(fundodiv.jpg) no-repeat;
-        width:500px;
+        width:710px;
         height: 250px;
         text-align: center;
-        color: white;
+        margin-left: auto;
+        margin-right: auto;
+        background-repeat:no-repeat;
+        background-size:auto auto;
+      }
+      .divtexto{
+        margin-left:auto;
+        margin-right:auto;
+        background-color: #C0C0C0;
+        width:710px;
+        height: 300px;
       }
       b{
         font-family: cursive;
@@ -42,10 +53,10 @@
   
   <body><?php require_once "header/header.php" ?>
 
-  <div style="margin-left:-10px;width:102%;height: 80px;background-color: #D3D3D3;margin-top:0;" >
+  <div style="margin-left:-10px;width:102%;height: 80px;background-color: #808080;" >
     <ul>
       <h3>Olá, Seja Bem Vindo a minha Pagina Pessoal!!</h3>
-      <h4>Esta Pagina foi desenvolvida basicamente com PHP, HTML e JAVASCRIPT, com o intuito de mostrar ideias e projetos desenvolvidos por mim.</h4>   
+      <h4>Esta Pagina foi desenvolvida com PHP, HTML e JAVASCRIPT. Com o intuito de mostrar ideias e projetos desenvolvidos por mim.</h4>   
     </ul>
   </div>
 
@@ -56,22 +67,33 @@
 
     <span>Técnico em informática <br>Ivoti, RS, Brasil</span>
   </div>
-
-  <div class="div" style="margin-left:0px;margin-right:0;background-color: white;width:500px; height: 300px;">
-    <hr style="border:none;">
-      
+  <div class="divtexto">
     <div class="div div1">
-        vermelho
+    <p><i class="fa-brands fa-dev"></i><br>
+        Programador Iniciante</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
     </div>
     
     <div class="div div1">
-        azul
+    <p><i class="fa-solid fa-code"></i><br>
+        Técnico Em informática</p>
+        Formado no Iffar-fw(2021), experiência com 
+        HTML, CSS, JAVASCRIPT, PHP, SQL, JAVA.
+<br>
+<br>
+<br>
     </div>
     
     <div class="div div1">
-        verde
+        <p><i class="fa-solid fa-terminal"></i><br>Desenvolvimento</p>
+        Trabalho em uma gráfica na parte de Desenvolvimento, buscando soluções para problemas do dia a dia, utizando VBA e PYTHON.
+        <br>
+        <br>
     </div>
   </div>
-    <br><br>
   </body><?php require_once "footer/footer.php" ?>
 </html>
