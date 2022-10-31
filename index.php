@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Título da página</title>
+    <title>Cléo Rodrigues</title>
     <meta charset="UTF8" />
     <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css"/>
     <link rel="stylesheet" type="text/css" href="footer/footer.css"/>
