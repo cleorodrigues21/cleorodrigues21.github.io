@@ -1,5 +1,5 @@
 	footer{
-			width: auto;
+			width: 100%;
 			height: 85px;
 			background: #363636;
 			position: fixed;
@@ -14,4 +14,9 @@
 	a{
 			text-decoration: none;
 			color:#2ECCFA;
+	}
+	.foto{
+		background-image: url(./47281.png);
+		width: 20px;
+		height: 20px;
 	}

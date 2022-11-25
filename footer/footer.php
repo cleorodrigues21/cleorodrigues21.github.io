@@ -8,7 +8,7 @@
         <a href="https://github.com/cleorodrigues21"><i class="fa-brands fa-github"></i></a>
       </p>
       <p class="c">
-        <script src="data.js"></script>
-        <script src="../data.js"></script>
+        Ivoti - Rio Grande do Sul -
+       <script src="../data.js"></script>
       </p>
 </footer>
